@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shibu Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-image: url('pattern-background-love-background-valentine-day-good-for-wallpaper-website-background-social-media-blue-color-vector.jpg');
+            background-repeat: no-repeat;
+        }
+        .bc-img{
+            display:flex;
+            justify-content:center;
+        }
+        .msg{
+            background-color:antiquewhite;
+            margin-left:40%;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height:300px;
+            width:350px;
+            border-radius: 10%;
+        }
+        label{
+            position: absolute;
+            top:45%;
+        }
+        .btn{
+            padding:40px;
+            display:inline-flex;
+        }
+        #yes{
+            background-color:green;
+            height:50px;
+            width:100px;
+            color:white;
+            border-radius: 10%;
+        }
+        #no{
+            background-color:red;
+            height:50px;
+            width:100px;
+            color:white;
+            border-radius: 10%;
+        }
+        #yesPage{
+            position:absolute;
+            top:40%;
+            left:45%;
+           
+            /* justify-content: center;
+            align-items:center; */
+        }
+        .celebration-message{
+            font-size: 48px;
+            color: pink;
+            font-weight: bold;
+            text-align: center;
+        }
+        .celebration-img{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #decor {
+    position: fixed;  /* Position fixed to cover the whole page */
+    top: 0;
+    left: 0;
+    width: 100%;      /* Make it take up the full width */
+    height: 100%;     /* Make it take up the full height */
+    z-index: -1;      /* Place it behind other elements */
+    display: flex;    /* Use flexbox to center the content */
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <i class="fa-solid fa-music" onclick="playSound()"></i>
+    <audio id="myAudio">
+        <source src="audio\leva-eternity-149473.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- <div class="bc-img">
+        <img src="bees.png" alt="Cute Valentine Image" width="250">
+        <img src="heart.png" alt="Cute Valentine Image" width="250">
+        <img src="valentines-day.png" alt="Cute Valentine Image" width="250">
+    </div> -->
+    <!-- <div class="msg">
+        <label for="box"><h3>Will you be my Valentine?</h3></label>
+        <div class="btn">
+            <button id="yes">Yes</button>
+            <button id="no">NO</button>
+        </div>
+    </div> -->
+    <div class="decor">
+        <img src="ZOHV.gif" alt="Celebration GIF" width="250">
+    
+        
+    </div>
+    <div id="yesPage" >
+        <div class="celebration-message">
+            Yay!!! 💖🎉
+        </div>
+        <div class="celebration-img">
+            <img src="https://media.tenor.com/VIChDQ6ejRQAAAAj/jumping-bear-hearts-no-png.gif" alt="Celebration GIF" width="250">
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script>
+        // const NO_PHRASES = [
+        //     "No 💔",
+        //     "Pretty please? 🥺",
+        //     "But we'd be so cute together! 💕",
+        //     "One more chance, pookie?",
+        //     "Don't break my heart :(",
+        //     "What about a maybe?",
+        //     "Please don't do this to me, I'm fragile",
+        // // ];
+
+        let noClicks = 0;
+
+        function playSound() {
+            document.getElementById("myAudio").play();
+        }
+
+        // const yesbtn = document.getElementById('yes');
+        // const nobtn = document.getElementById('no');
+        // const yesPage = document.getElementById('yesPage');
+        
+        // // Handle 'No' Button Click
+        // nobtn.addEventListener('click', function() {
+        //     // Increase the number of clicks for 'No'
+        //     noClicks++;
+
+        //     // Update the "No" button text from the NO_PHRASES array
+        //     nobtn.innerText = NO_PHRASES[Math.min(noClicks - 1, NO_PHRASES.length - 1)];
+
+        //     // Increase the size of the 'Yes' button
+        //     yesbtn.style.height = (50 + noClicks * 10) + 'px'; // Increase height
+        //     yesbtn.style.width = (100 + noClicks * 20) + 'px'; // Increase width
+        // });
+
+        // // Handle 'Yes' Button Click
+        // yesbtn.addEventListener('click', function() {
+        //     yesbtn.style.display = 'none';  // Hide the 'Yes' button
+        //     nobtn.style.display = 'none';  // Hide the 'No' button
+        //     yesPage.style.display = 'block';  // Show the 'Yes' page with a celebration
+        // });
+
+        // Optional: To play the audio when the page loads
+        // window.onload = function() {
+        //     let audio = document.getElementById("myAudio");
+        //     audio.play().catch(error => {
+        //         console.log("Autoplay blocked. User interaction required.");
+        //     });
+        // };
+    </script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin:0;
+    padding:0;
+   
+}
+
+body{
+    background-image: url('pattern-background-love-background-valentine-day-good-for-wallpaper-website-background-social-media-blue-color-vector.jpg');
+    /* background-image: url('animated-love-image-0552.gif'); */
+    background-repeat: no-repeat;
+    
+}
+
+
+.bc-img{
+    display:flex;
+    justify-content:center
+}
+
+.msg{
+    background-color:antiquewhite;
+    margin-left:40%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:300px;
+    width:350px;
+    border-radius: 10%;
+   
+}
+label{
+    
+    position: absolute;
+    top:45%;
+    
+}
+/* label{
+    /* padding-top:40px; */
+/*     
+    font-size: medium;
+    position: relative;
+    left:15%; */
+    /* justify-content: center;
+    align-items: center; */
+.btn{
+    padding:40px;
+    display:inline-flex
+}
+#yes{
+background-color:green;
+height:50px;
+width:100px;
+color:white;
+border-radius: 10%;
+}
+#no{
+    background-color:red;
+    height:50px;
+    width:100px;
+    color:white;
+    border-radius: 10%;
+}
+    </style>
+</head>
+<body>
+    <img src="animated-love-image-0552.gif" alt="" id="giff">
+    <i class="fa-solid fa-music" onclick="playSound()"></i>
+    
+
+<audio id="myAudio">
+    <source src="audio\leva-eternity-149473.mp3" type="audio/mpeg">
+</audio>
+
+    
+    <div class="bc-img">
+        <img src="bees.png" alt="Cute Valentine Image" width="250">
+        <img src="heart.png" alt="Cute Valentine Image" width="250">
+        <img src="valentines-day.png" alt="Cute Valentine Image" width="250">
+
+    </div>
+    <div class="msg">
+
+        <label for="box"><h3>will you be my valentine?</h3></label>
+   
+        <div class="btn">
+        <button id="yes">Yes</button>
+        <button id="no">NO</button></div>
+
+
+    
+</div>
+    <footer>
+
+    </footer>
+    <script >
+        const NO_PHRASES = [
+        "No 💔",
+        "Pretty please? 🥺",
+        "But we'd be so cute together! 💕",
+        "One more chance, pookie?",
+        "Don't break my heart :(",
+        "What about a maybe?",
+        "Please don't do this to me, I'm fragile",
+    ];
+
+    let noClicks = 0;
+    
+         function playSound() {
+        document.getElementById("myAudio").play();
+    }
+
+    const yesbtn=document.getElementById('yes');
+    const nobtn=document.getElementById('no');
+    
+
+    nobtn.addEventListener('click',function(){
+        
+        yesbtn.style.height = (noClicks * 50 + 16) + 'vh';
+        yesbtn.style.width=(noClicks * 50 + 16) + 'vw';
+        nobtn.innerHTML=`NO_PHRASES`+
+
+    })
+        // window.onload = function() {
+        //     let audio = document.getElementById("backgroundAudio");
+        //     audio.play().catch(error => {
+        //         console.log("Autoplay blocked. User interaction required.");
+        //     });
+        // };
+    </script>
+</body>
+</html>  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShibuDocument</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-image: url('pattern-background-love-background-valentine-day-good-for-wallpaper-website-background-social-media-blue-color-vector.jpg');
+            background-repeat: no-repeat;
+        }
+        .bc-img{
+            display:flex;
+            justify-content:center;
+        }
+        .msg{
+            background-color:antiquewhite;
+            margin-left:40%;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height:300px;
+            width:350px;
+            border-radius: 10%;
+        }
+        label{
+            position: absolute;
+            top:45%;
+        }
+        .btn{
+            padding:40px;
+            display:inline-flex;
+        }
+        #yes{
+            background-color:green;
+            height:50px;
+            width:100px;
+            color:white;
+            border-radius: 10%;
+        }
+        #no{
+            background-color:red;
+            height:50px;
+            width:100px;
+            color:white;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <i class="fa-solid fa-music" onclick="playSound()"></i>
+    <audio id="myAudio">
+        <source src="audio\leva-eternity-149473.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="bc-img">
+        <img src="bees.png" alt="Cute Valentine Image" width="250">
+        <!-- <img src="heart.png" alt="Cute Valentine Image" width="250"> -->
+        <img src="valentines-day.png" alt="Cute Valentine Image" width="250">
+        <img src="heart-117_256.gif" alt="Cute Valentine Image" width="250">
+
+    </div>
+    <div class="msg">
+        <label for="box"><h3>will you be my valentine?</h3></label>
+        <div class="btn">
+            <button id="yes">Yes</button>
+            <button id="no">NO</button>
+        </div>
+    </div>
+    
+    <footer></footer>
+
+    <script>
+        const NO_PHRASES = [
+            "No 💔",
+            "Pretty please? 🥺",
+            "But we'd be so cute together! 💕",
+            "One more chance, pookie?",
+            "Don't break my heart :(",
+            "What about a maybe?",
+            "Please don't do this to me, I'm fragile",
+        ];
+    
+        let noClicks = 0;
+    
+        function playSound() {
+            document.getElementById("myAudio").play();
+        }
+    
+        const yesbtn = document.getElementById('yes');
+        const nobtn = document.getElementById('no');
+        
+        nobtn.addEventListener('click', function() {
+            // Increase the number of clicks for 'No'
+            noClicks++;
+    
+            // Update the "No" button text from the NO_PHRASES array
+            nobtn.innerText = NO_PHRASES[Math.min(noClicks, NO_PHRASES.length - 1)];
+    
+            // Increase the size of the 'Yes' button
+            yesbtn.style.height = (50 + noClicks * 10) + 'px'; // Increase height
+            yesbtn.style.width = (100 + noClicks * 20) + 'px'; // Increase width
+        });
+    
+        yesbtn.addEventListener('click', function() {
+            // Redirect to the "Yes" page without clicking
+            window.location.href = 'yes.html';  // This will immediately go to the "Yes" page
+        });
+    </script>
+    
+    
+</body>
+</html>
